@@ -1,3 +1,7 @@
+body {
+	overflow-x: hidden;
+}
+
 ::-moz-selection { /* firefox */
 	color: #FBFBFB;
 	background: #F93154;
