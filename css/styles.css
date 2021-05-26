@@ -1,0 +1,11 @@
+.blockquote-footer:before {
+	content: none;
+}
+
+.border-left {
+	border-left-width: 3px !important;
+}
+
+figcaption ul li {
+	max-width: 80%;;
+}

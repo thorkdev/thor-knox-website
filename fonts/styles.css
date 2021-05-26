@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'amiibo-font';
+	src: url('amiibo-font/amiibo-font.woff2') format('woff2'), /* newer */
+		 url('amiibo-font/amiibo-font.woff') format('woff'); /* older */
+}
+
+@font-face {
+	font-family: 'pokemon-font';
+	src: url('pokemon-font/pocket-monk.woff2') format('woff2'), /* newer */
+		 url('pokemon-font/pocket-monk.woff') format('woff'); /* older */
+}
+
+.amiibo-font {
+	font-family: 'amiibo-font';
+}
+
+.pokemon-font {
+	font-family: 'pokemon-font';
+}
