@@ -33,7 +33,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-collapsed">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" id="link-highlight">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
               aria-expanded="false">Projects</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -49,8 +49,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#development-experience"
+          <li class="nav-item" id="link-highlight">
+            <a class="nav-link" aria-current="page" href="#development-experience" 
               data-mdb-smooth-scroll="smooth-scroll" data-mdb-offset="50" data-mdb-duration="150">
               Development
             </a>
@@ -63,7 +63,7 @@
             </a>
           </li>
           -->
-          <li class="nav-item">
+          <li class="nav-item" id="link-highlight">
             <a class="nav-link" aria-current="page" href="#about-me" data-mdb-smooth-scroll="smooth-scroll"
               data-mdb-offset="100" data-mdb-duration="300">
               About
@@ -71,17 +71,17 @@
           </li>
         </ul>
         <ul class="navbar-nav flex-row">
-          <li class="nav-item">
+          <li class="nav-item" id="link-highlight">
             <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/thomas-knox-584326206/">
               <i class="fab fa-linkedin-in pe-2"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="link-highlight">
             <a class="nav-link" target="_blank" href="https://github.com/thorkdev">
               <i class="fab fa-github pe-2"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="link-highlight">
             <a class="nav-link" target="_blank" href="https://twitter.com/thorknox">
               <i class="fab fa-twitter pe-2"></i>
             </a>
@@ -93,7 +93,7 @@
 
   <!-- intro -->
   <div id="intro" class="text-center bg-image bg-fixed vh-100" style="background-image: url('img/background.jpg');">
-    <div class="mask" style="background-color: rgba(255, 255, 255, 0.7);">
+    <div class="mask" id="intro-mask">
       <div class="d-flex justify-content-center align-items-center h-100 mt-4">
         <div class="">
           <h1 class="display-3 mb-4">
@@ -102,10 +102,53 @@
           <p class="text-uppercase lead mb-5 px-3">
             Professional Software Engineer & Hobbyist Game Developer
           </p>
-          <a href="#development-experience" class="mt-3 btn btn-floating btn-lg btn-dark"
-            data-mdb-smooth-scroll="smooth-scroll" data-mdb-offset="50" data-mdb-duration="150">
+          <a href="#projects" class="mt-3 btn btn-floating btn-lg btn-danger"
+            data-mdb-smooth-scroll="smooth-scroll" data-mdb-offset="100" data-mdb-duration="150">
             <i class="fas fa-caret-down" aria-hidden="true"></i>
           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- projects -->
+  <div class="container my-5 p-5 shadow-5 rounded" id="projects">
+    <h3 class="text-center">Projects</h3>
+    <p class="text-center font-weight-bold small text-uppercase mb-5 pb-2">Some Recent Things I've Made</p>
+    <!--
+    <p class="text-center mb-5 mx-auto w-responsive">
+      Here are a few things I've been working on recently.
+    </p>
+    -->
+    <div class="lightbox">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 mb-4 px-2">
+          <img src="img/projects/project-amiibo-hub.png" data-mdb-caption="Quickly filter amiibos, their games, and uses therein."
+            data-mdb-img="img/projects/project-amiibo-hub.png" alt="Amiibo Hub Landing Page"
+            class="w-100 shadow-1-strong rounded" />
+            <p class="text-uppercase font-weight-bold mt-4">
+              | <a class="link-danger" href="https://thorknox.dev/amiibo-hub/" target="_blank">Amiibo Hub</a> - Collection & Glossary Tool</p>
+        </div>
+        <div class="col-lg-4 mb-4 px-2">
+          <img src="img/projects/project-oliam-island-1.png"
+          data-mdb-caption="Level 3 of Oliam Island - a platformer I'm making for my kids." 
+            data-mdb-img="img/projects/project-oliam-island-1.png" alt="Kid Friendly 2D Platformer - Level 3 "
+            class="w-100 shadow-1-strong rounded" />
+            <!-- hidden image -->
+            <img src="img/projects/project-oliam-island-0.png" 
+              data-mdb-caption="Level select for Oliam Island - a platformer I'm making for my kids."
+              data-mdb-img="img/projects/project-oliam-island-0.png" alt="Kid Friendly 2D Platformer - Level Select" 
+              style="display: none;" />
+            <p class="text-uppercase font-weight-bold mt-4">| Oliam Island -
+              <span class="text-muted">2D Platformer for My Kids</span>
+            </p>
+        </div>
+        <div class="col-lg-4 mb-4 px-2">
+          <img src="img/projects/project-brb-avenu.png" data-mdb-caption="A website I was contracted to design and maintain."
+            data-mdb-img="img/projects/project-brb-avenu.png" alt="BRB Avenu Hair Salon Website"
+            class="w-100 shadow-1-strong rounded" />
+          <p class="text-uppercase font-weight-bold mt-4">
+            | <a class="link-danger" href="https://brbavenu.com/" target="_blank">BRB Avenu</a> - Salon Website</p>
         </div>
       </div>
     </div>
@@ -117,10 +160,10 @@
       <div class="col-lg-6 mb-3 mb-lg-0 pb-2 pb-lg-0 pb-xl-2">
         <h5 class="text-uppercase mb-5">Experience</h5>
         <!-- app development -->
-        <figure class="border-left border-primary ps-3 py-2 mb-2">
+        <figure class="border-left border-danger ps-3 py-2 mb-2">
           <blockquote class="blockquote">
             <h5 class="pb-3">
-              <i class="fas fa-tablet-alt me-3 text-primary" aria-hidden="true"></i>
+              <i class="fas fa-tablet-alt me-3 text-danger" aria-hidden="true"></i>
               Applications
             </h5>
           </blockquote>
@@ -130,10 +173,10 @@
           </figcaption>
         </figure>
         <!-- game development -->
-        <figure class="border-left border-primary ps-3 py-2 mb-2">
+        <figure class="border-left border-danger ps-3 py-2 mb-2">
           <blockquote class="blockquote">
             <h5 class="pb-3">
-              <i class="fas fa-gamepad me-3 text-primary" aria-hidden="true"></i>
+              <i class="fas fa-gamepad me-3 text-danger" aria-hidden="true"></i>
               Games
             </h5>
           </blockquote>
@@ -149,10 +192,10 @@
           </figcaption>
         </figure>
         <!-- web development -->
-        <figure class="border-left border-primary ps-3 py-2 mb-2">
+        <figure class="border-left border-danger ps-3 py-2 mb-2">
           <blockquote class="blockquote">
             <h5 class="pb-3">
-              <i class="fas fa-code me-3 text-primary" aria-hidden="true"></i>
+              <i class="fas fa-code me-3 text-danger" aria-hidden="true"></i>
               Web
             </h5>
           </blockquote>
@@ -167,10 +210,10 @@
           </figcaption>
         </figure>
         <!-- cloud development -->
-        <figure class="border-left border-primary ps-3 py-2 mb-2">
+        <figure class="border-left border-danger ps-3 py-2 mb-2">
           <blockquote class="blockquote">
             <h5 class="pb-3">
-              <i class="fas fa-cloud me-3 text-primary" aria-hidden="true"></i>
+              <i class="fas fa-cloud me-3 text-danger" aria-hidden="true"></i>
               Cloud
             </h5>
           </blockquote>
@@ -184,47 +227,47 @@
         <h5 class="text-uppercase mb-5">Development</h5>
         <p class="font-weight-bold mb-2">C#/.Net</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">Unity</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">ASP.Net</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">HTML5</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">Css3</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">Javascript</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">JQuery</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">SQL</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="font-weight-bold pt-4 mt-3 mb-2">Azure</p>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0"
+          <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
       </div>
@@ -233,7 +276,7 @@
 
   <!-- quote -->
   <div class="bg-image bg-fixed text-center" style="background-image:url('img/quote.jpg'); height: 256px;">
-    <div class="mask" style="background-color: rgba(18, 102, 241, 0.5);">
+    <div class="mask" id="quote-mask">
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="text-white">
           <p class="display-6 mb-5 px-3">
@@ -256,7 +299,7 @@
         <div class="col-md-4 mb-4 mb-md-0">
           <div class="card shadow-4" style="min-height: 100%;">
             <div class="card-body">
-              <i class="fas fa-code fa-3x mt-3 text-primary"></i>
+              <i class="fas fa-code fa-3x mt-3 text-danger"></i>
               <h5 class="card-title my-4">Web Design</h5>
               <p class="card-text mb-3">Create a custom and tailored website for all of your needs.</p>
             </div>
@@ -265,7 +308,7 @@
         <div class="col-md-4 mb-4 mb-md-0">
           <div class="card shadow-4" style="min-height: 100%;">
             <div class="card-body">
-              <i class="fas fa-tablet-alt fa-3x mt-3 text-primary"></i>
+              <i class="fas fa-tablet-alt fa-3x mt-3 text-danger"></i>
               <h5 class="card-title my-4">Apps & Games</h5>
               <p class="card-text mb-3">Design, develop, and publish your next ingeniuos idea!</p>
             </div>
@@ -274,7 +317,7 @@
         <div class="col-md-4 mb-4 mb-md-0">
           <div class="card shadow-4" style="min-height: 100%;">
             <div class="card-body">
-              <i class="fas fa-store fa-3x mt-3 text-primary"></i>
+              <i class="fas fa-store fa-3x mt-3 text-danger"></i>
               <h5 class="card-title my-4">Startup</h5>
               <p class="card-text mb-3">Complete technology consultation to discover all of your needs and their
                 solutions.</p>
@@ -296,10 +339,10 @@
       </p>
       <div class="mb-1 mx-auto">
         <div class="bg-image ripple p-3" data-mdb-ripple-color="light">
-          <img class="img-fluid rounded-circle mb-4 shadow" src="img/me.jpg" alt="thomas-knox" style="width: 180px" />
+          <img class="img-fluid rounded-circle mb-4 shadow-2-strong" src="img/me.jpg" alt="thomas-knox" style="width: 180px" />
         </div>
         <h5>Thomas Knox</h5>
-        <p>Software Engineer</p>
+        <!--<p>Software Engineer</p>-->
       </div>
     </section>
   </div>
@@ -309,17 +352,17 @@
     <div class="container">
       <section class="mb-5">
         <!-- linkedin -->
-        <a class="btn btn-outline-primary btn-floating m-1" target="_blank"
+        <a class="btn btn-outline-danger btn-floating m-1" target="_blank"
           href="https://www.linkedin.com/in/thomas-knox-584326206/" role="button">
           <i class="fab fa-linkedin-in"></i>
         </a>
         <!-- github -->
-        <a class="btn btn-outline-primary btn-floating m-1" target="_blank" href="https://github.com/thorkdev"
+        <a class="btn btn-outline-danger btn-floating m-1" target="_blank" href="https://github.com/thorkdev"
           role="button">
           <i class="fab fa-github"></i>
         </a>
         <!-- twitter -->
-        <a class="btn btn-outline-primary btn-floating m-1" target="_blank" href="https://twitter.com/thorknox"
+        <a class="btn btn-outline-danger btn-floating m-1" target="_blank" href="https://twitter.com/thorknox"
           role="button">
           <i class="fab fa-twitter"></i>
         </a>
@@ -327,7 +370,7 @@
     </div>
     <div class="text-center shadow-1-strong p-3">
       © 2021 Copyright:
-      <a class="text-primary" href="https://thorknox.dev/">Thomas Knox</a>
+      <a class="link-danger font-weight-light" href="https://thorknox.dev/">Thomas Knox</a>
     </div>
   </footer>
 

@@ -1,3 +1,13 @@
+::-moz-selection { /* Code for Firefox */
+	color: #FBFBFB;
+	background: #F93154;
+  }
+  
+  ::selection {
+	color: #FBFBFB;
+	background: #F93154;
+  }
+
 .blockquote-footer:before {
 	content: none;
 }
@@ -8,4 +18,25 @@
 
 figcaption ul li {
 	max-width: 80%;;
+}
+
+#link-highlight a:hover {
+	color: #F93154;
+}
+
+#quote-mask {
+	background: #ff9a9e;
+	background: -webkit-linear-gradient(to top, rgba(255, 154, 158, 0.5), rgba(250, 208, 196, 0.5));
+	background: linear-gradient(to top, rgba(255, 154, 158, 0.5), rgba(250, 208, 196, 0.5))
+}
+
+#intro-mask {
+	/* fallback for old browsers */
+	background: #e6e9f0;
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to top, rgba(230, 233, 240, 0.5), rgba(238, 241, 245, 0.5));
+  
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to top, rgba(230, 233, 240, 0.5), rgba(238, 241, 245, 0.5))
 }
