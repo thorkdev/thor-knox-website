@@ -25,13 +25,13 @@ figcaption ul li {
 }
 
 #quote-mask {
-	background: #ff9a9e;
+	background: #ff9a9e57;
 	background: -webkit-linear-gradient(to top, rgba(255, 154, 158, 0.5), rgba(250, 208, 196, 0.5));
 	background: linear-gradient(to top, rgba(255, 154, 158, 0.5), rgba(250, 208, 196, 0.5))
 }
 
 #intro-mask {
-	background: #e6e9f0;
-	background: -webkit-linear-gradient(to top, rgba(230, 233, 240, 0.5), rgba(238, 241, 245, 0.5));
-	background: linear-gradient(to top, rgba(230, 233, 240, 0.5), rgba(238, 241, 245, 0.5))
+	background: #e6e9f057;
+	background: -webkit-linear-gradient(to top, rgba(230, 233, 240, 0.4), rgba(238, 241, 245, 0.4));
+	background: linear-gradient(to top, rgba(230, 233, 240, 0.4), rgba(238, 241, 245, 0.4))
 }
