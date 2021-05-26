@@ -20,7 +20,7 @@ figcaption ul li {
 	max-width: 80%;;
 }
 
-#link-highlight a:hover {
+#navbar-collapsed li a:hover {
 	color: #F93154;
 }
 
