@@ -10,10 +10,21 @@
 		 url('pokemon-font/pocket-monk.woff') format('woff'); /* older */
 }
 
+@font-face {
+	font-family: 'comix-font';
+	src: url('comix-font/comix.woff2') format('woff2'), /* newer */
+		 url('comix-font/comix.woff') format('woff'); /* older */
+}
+
 .amiibo-font {
 	font-family: 'amiibo-font';
 }
 
 .pokemon-font {
 	font-family: 'pokemon-font';
+}
+
+.comix-font {
+	font-family: 'comix-font';
+	letter-spacing: 2px;
 }
