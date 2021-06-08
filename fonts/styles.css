@@ -16,6 +16,12 @@
 		 url('comix-font/comix.woff') format('woff'); /* older */
 }
 
+@font-face {
+	font-family: 'norse-font';
+	src: url('norse-font/norse.woff2') format('woff2'), /* newer */
+		 url('norse-font/norse.woff') format('woff'); /* older */
+}
+
 .amiibo-font {
 	font-family: 'amiibo-font';
 }
@@ -27,4 +33,8 @@
 .comix-font {
 	font-family: 'comix-font';
 	letter-spacing: 2px;
+}
+
+.norse-font {
+	font-family: 'norse-font';
 }
