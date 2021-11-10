@@ -32,14 +32,10 @@
     <!-- mdb -->
     <script type="text/javascript" src="../js/mdb.min.js"></script>
 
-    <!-- jquery -->
-    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.wait.js"></script>
-
     <script>
-        const snowflakes = $('#snowflakes');
+        const snowflakes = document.getElementById("snowflakes");
         for (var i = 0; i < 99; i++) {
-            var snowflake = document.createElement('div');
+            var snowflake = document.createElement("div");
             snowflake.className = "snow";
             snowflakes.append(snowflake);
         }
