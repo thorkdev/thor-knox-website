@@ -38,3 +38,18 @@
 .norse-font {
 	font-family: 'norse-font';
 }
+
+.lato-font {
+	font-family: 'Lato';
+	font-weight: 700;
+}
+
+.lato-font--black {
+	font-family: 'Lato';
+	font-weight: 900;
+}
+
+.rubik-font--black {
+	font-family: 'Rubik';
+	font-weight: 900;
+}
